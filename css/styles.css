@@ -4,4 +4,64 @@
     --norm-gold: #bd9a1c;
     --light-tan: #dbd5ad;
     --off-white: #f0eacd;
+    background-color: pink;
+}
+
+header {
+    background-color: grey;
+    border: solid, black, 1px;
+    width: 100%;
+    height: 5rem;
+}
+
+ul.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbutton {
+    background-color: teal;
+    margin: 2rem 3rem 3rem 2rem;
+}
+
+ul.navbar li {
+    display: inline;
+}
+
+#landing-page{
+    background-color: var(--forest-green);
+    color: var(--norm-gold);
+}
+
+h1.landingText1 {
+    color: var(--norm-gold);
+    background-color: brown;
+    border: solid, black;
+}
+
+h3.landingText2 {
+    background-color: purple;
+    border: solid, black;
+}
+
+#intro-box{
+    background-color: red;
+    float: left;
+    width: 60%;
+    height: 100%;
+}
+
+#headshot-box{
+    background-color: blue;
+    float: right;
+    width: 40%;
+    height: 100%;
+}
+
+footer{
+    background-color: var(--forest-green);
+    width: 20 px;
+    height: 20 px;
+    border: solid, black;
 }

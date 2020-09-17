@@ -1,4 +1,14 @@
 /*
+Scroll Jump Section
+*/
+function scrollto(div){
+    $('html,body').animate(
+        {
+            scrollTop: $("#"+div).offset().top
+        },'slow');
+}
+
+/*
 Services Page Split Screen Logic Draft
 */
 var leftButtonGo = false;

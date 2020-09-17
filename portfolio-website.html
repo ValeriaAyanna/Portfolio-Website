@@ -7,7 +7,7 @@
         <meta name="My Portfolio" content="Valeria Felder">
         <meta name="Valeria Felder" content="SitePoint">
 
-        <link rel="stylesheet" href="css/style.css">
+        <link href="./css/styles.css" rel="stylesheet" type="text/css" media="screen">
 
     </head>
     <body>
@@ -15,22 +15,82 @@
 
         <header>
             <nav>
-               <ul>
-                   <li><img src="img/logo.png" alt="logo" /></li>
+               <ul class="navbar">
+                   <li class="navbutton"><img src="img/logo.png" alt="logo" /></li>
 
-                   <li><a href="">Home</a></li>
-                   <li><a href="">About</a></li>
-                   <li><a href="">Services</a></li>
-                   <li><a href="">Contact</a></li>
+                   <li class="navbutton">Home</li>
+                   <li class="navbutton">About</li>
+                   <li class="navbutton">Services</li>
+                   <li class="navbutton">Contact</li>
                </ul> 
             </nav>
         </header>
 
-        <section><!-- This is the landing page text box for the left side-->
-            
+        <section id="home">
+            <section id="intro-box"><!-- This is the landing page text box for the left side-->
+                <h1 class="landingText1">Valeria Felder</h1>
+                <h3 class="landingText2">Web Developer, UI/UX Designer</h3>
+                <button>Hire Me!</button>
+            </section>
+            <section id="headshot-box"><!-- This is the section for the headshot-->
+                <img src="img/headshot.png" alt="headshot" />
+            </section>
         </section>
-        <section><!-- This is the section for the headshot-->
 
+        <br>
+
+        <!--About-->
+        <section id="about">
+            <p>Hi there! I'm Valeria.</p>
         </section>
+        <section>
+            <section><!--Education-->
+
+            </section>
+            <section><!--Skills-->
+
+            </section>
+        </section>
+
+        <br>
+
+        <!--Services-->
+        <section id="services">
+            <section>
+                <h2>Web Development</h2>
+                <h4>Your website your way</h4>
+            </section>
+            <section>
+                <h2>UI/UX Design</h2>
+                <h4>Your ideas brought to life</h4>
+            </section>
+        </section>
+
+        <!--Contact-->
+        <section id="contact">
+            <h2>Let's connect!</h2>
+            <h4>I'd love to hear from you</h4>
+            <section>
+                <section><!--form-->
+
+                </section>
+                <section><!-- information-->
+
+                </section>
+            </section>
+        </section>
+        
+
     </body>
+
+    <footer>
+        <nav>
+            <ul>
+                <li><a href=""><img src="img/linkedin.png" alt="linkedin" /></a></li>
+                <li><a href=""><img src="img/github.png" alt="github" /></a></li>
+                <li><a href=""><img src="img/email.png" alt="email" /></a></li>
+                <li><a href=""><img src="img/phone.png" alt="phone" /></a></li>
+            </ul> 
+         </nav>
+    </footer>
 </html>
