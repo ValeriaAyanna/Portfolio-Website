@@ -10,47 +10,60 @@
         <link href="./css/styles.css" rel="stylesheet" type="text/css" media="screen">
 
     </head>
-    <body>
-        <script src="js/scripts.js"></script>
 
-        <header>
+    <body class="l-main">
+
+        <!------------HOME--------------->
+        <script src="js/scripts.js"></script>
+        <script src="https://unpkg.com/scrollreveal"></script> <!-- SCROLL REVEAL-->
+
+
+
+        <header class="col-12">
             <nav>
                <ul class="navbar">
-                   <li class="navbutton"><img src="img/logo.png" alt="logo" /></li>
+                   <li class="navbutton"><a href="#" class="nav-link"><img src="img/logo.png" alt="logo" /></a></li>
 
-                   <li class="navbutton">Home</li>
-                   <li class="navbutton">About</li>
-                   <li class="navbutton">Services</li>
-                   <li class="navbutton">Contact</li>
+                   <li class="navbutton"><a href="#home" class="nav-link-active">Home</a></li>
+                   <li class="navbutton"><a href="#about" class="nav-link">About</a></li>
+                   <li class="navbutton"><a href="#services" class="nav-link">Services</a></li>
+                   <li class="navbutton"><a href="#contact" class="nav-link">Contact</a></li>
                </ul> 
             </nav>
         </header>
 
-        <section id="home">
-            <section id="intro-box"><!-- This is the landing page text box for the left side-->
-                <h1 class="landingText1">Valeria Felder</h1>
-                <h3 class="landingText2">Web Developer, UI/UX Designer</h3>
-                <button>Hire Me!</button>
-            </section>
-            <section id="headshot-box"><!-- This is the section for the headshot-->
+        <!----------------HOME---------------->
+        <section id="home" >
+            <div class="home-data col-6"><!-- This is the landing page text box for the left side-->
+                <h1 class="landingText1">Valeria Felder<br>Web Developer, UI/UX Designer</h1>
+                
+                <a href="#" class="button">Contact</a>
+            </div>
+
+            <div id="headshot-box" class="col-6"><!-- This is the section for the headshot-->
                 <img src="img/headshot.png" alt="headshot" />
-            </section>
+            </div>
         </section>
 
-        <br>
+        
 
-        <!--About-->
-        <section id="about">
-            <p>Hi there! I'm Valeria.</p>
+        <!-----------------ABOUT------------------>
+        <section id="about" class="about section">
+            <h2 class="section-title">About</h2>
+
+            <div>
+                <!--Text Box-->
+            </div>
+
+            <div>
+                <!--Education-->
+            </div>
+
+            <div>
+                <!--Skills-->
+            </div>
         </section>
-        <section>
-            <section><!--Education-->
-
-            </section>
-            <section><!--Skills-->
-
-            </section>
-        </section>
+        
 
         <br>
 

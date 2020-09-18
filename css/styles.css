@@ -1,4 +1,5 @@
-.root{
+
+:root{
     --forest-green: #1a3f12;
     --rich-black: #000a00;
     --norm-gold: #bd9a1c;
@@ -7,11 +8,86 @@
     background-color: pink;
 }
 
+/*-----RESPONSIVE GRID------*/
+* {
+    box-sizing: border-box;
+}
+
+
+@media only screen and (max-width: 768px) {
+    /*For mobile; stacks all elements*/
+    [class*="col-"] {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    /*For Desktop; class for each of the twelve grid columns*/
+    .s-col-1 {width: 8.33%;}
+    .s-col-2 {width: 16.66%;}
+    .s-col-3 {width: 25%;}
+    .s-col-4 {width: 33.33%;}
+    .s-col-5 {width: 41.66%;}
+    .s-col-6 {width: 50%;}
+    .s-col-7 {width: 58.33%;}
+    .s-col-8 {width: 66.66%;}
+    .s-col-9 {width: 75%;}
+    .s-col-10 {width: 83.33%;}
+    .s-col-11 {width: 91.66%;}
+    .s-col-12 {width: 100%;}
+}
+
+@media only screen and (min-width: 768px) {
+    /*For Desktop; class for each of the twelve grid columns*/
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}
+
+/*floats all columns to the left with padding*/
+[clas*="col-"] {
+    float: left;
+    padding: 15px;
+    border: 1px solid red;
+}
+
+/*prevents other elements being placed as if columns don't exist*/
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/*----------------RESPONSIVE TEXT SIZE------------------*/
+@media only screen and (min-width:601px) {
+    div.example {
+        font-size: 80px;
+    }
+}
+
+@media only screen and (max-width:600px) {
+    div.example {
+        font-size: 30px;
+    }
+}
+
 header {
     background-color: grey;
     border: solid, black, 1px;
     width: 100%;
     height: 5rem;
+    opacity: 0.5;
+    margin: 0;
+    text-align: bottom;
 }
 
 ul.navbar {
@@ -49,14 +125,26 @@ h3.landingText2 {
     background-color: red;
     float: left;
     width: 60%;
-    height: 100%;
+    height: 30rem;
+    opacity: 0.5;
+    margin: 0;
 }
 
 #headshot-box{
     background-color: blue;
     float: right;
     width: 40%;
-    height: 100%;
+    height: 30rem;
+    opacity: 0.5;
+    margin: 0;
+}
+
+#about {
+    background-color: yellow;
+    width: 100%;
+    height: 40rem;
+    opacity: 0.5;
+    margin: 0;
 }
 
 footer{
