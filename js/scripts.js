@@ -1,16 +1,17 @@
 /* STICKY HEADER SECTION */
-window.onscroll = function() {stickyHeader()};
+window.onscroll = function() 
+{stickyHeader()};
 
-var header = document.getElementById("header-section");
+var headerSection = document.getElementById("header-section");
 
 var sticky = header.offsetTop;
 
 function stickyHeader() {
     if(window.pageYOffset > sticky) {
-        header.classList.add("sticky");
+        headerSection.classList.add("sticky");
     }
     else {
-        header.classList.remove("sticky");
+        headerSection.classList.remove("sticky");
     }
 }
 

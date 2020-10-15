@@ -53,7 +53,7 @@
     grid-auto-rows: minmax(100%, auto);
     background-color: var(--forest-green);
     width: 100%;
-    height: 100vh;
+    height: 86vh; /*compensates for the header, keeping full page*/
 }
 
 #home > div > img {
@@ -69,17 +69,19 @@
     display: inline-block;
     width: 100%;
     text-align: left;
-    /*margin-left: 10%;
-    margin-right: 25%;
-    margin-top: auto;
-    margin-bottom: auto;*/
     margin: auto;
-    /*padding: 15%;*/
     padding-left: 10%;
     padding-right: 15%;
-    padding-top: 15%;
+    padding-top: 25%;
     padding-bottom: 15%;
     
+}
+
+.home-data > a:link {
+    text-decoration: none;
+    
+    color: var(--light-tan);
+    font-size: 2em;
 }
 
 
@@ -99,14 +101,13 @@
     height: 30rem;
     margin-left: 20%;
     margin-right: 20%;
-    margin-bottom: 20%;
-    margin-top: 20%;
+    margin-bottom: 40%;
+    margin-top: 10%;
     display: inline-block;
 }
 
 header {
-    background-color: grey;
-    border: solid, black, 1px;
+    background-color: var(--forest-green);
     width: 100%;
     height: 5rem;
     margin: auto; /*was 0 */
@@ -131,18 +132,25 @@ header {
 ul.navbar {
     list-style-type: none;
     margin: 0;
-    padding: 0;
-    
+    padding-top: 2%;
 }
 
 .navbutton {
-    background-color: orangered;
     margin: 3rem 5rem 3rem 2rem;
-    text-decoration: none;
 }
 
 ul.navbar li {
     display: inline;
+}
+
+ul.navbar li > a:link {
+    text-decoration: none;
+    color: var(--light-tan);
+}
+
+.contact-button {
+    background-color: var(--norm-gold);
+    border-top-right-radius: 60%;
 }
 
 #landing-page{
@@ -152,14 +160,17 @@ ul.navbar li {
 
 h1.landingText1 {
     color: var(--norm-gold);
-    background-color: brown;
-    border: solid, black;
+    font-size: 3em;
+    margin-bottom: 0%;
+    background-color: red;
 }
 
-h3.landingText2 {
-    background-color: purple;
-    border: solid, black;
+h3.landingText {
+    color: var(--light-tan);
+    font-size: 2em;
+    background-color: green;
 }
+
 
 #intro-box{
     background-color: red;
