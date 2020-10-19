@@ -46,6 +46,8 @@
     }
 }
 
+
+
 /*For home, maybe try grid template 50% 50%.*/
 #home {
     display: grid;
@@ -60,8 +62,12 @@
     width: 120%;
     height: auto;
     float: center;
-    
+
+    /*Neomorphism Addition*/
     border-radius: 50%;
+    background: #1a3f12;
+    box-shadow: -16px 16px 68px #0a1907, 
+    16px -16px 68px #2a651d;
 }
 
 .home-data {
@@ -106,7 +112,7 @@
     display: inline-block;
 }
 
-header {
+#header-section {
     background-color: var(--forest-green);
     width: 100%;
     height: 5rem;
@@ -119,15 +125,6 @@ header {
     
 }
 
-.sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-}
-
-.sticky + .content {
-    padding-top: 102px;
-}
 
 ul.navbar {
     list-style-type: none;
@@ -150,8 +147,46 @@ ul.navbar li > a:link {
 
 .contact-button {
     background-color: var(--norm-gold);
-    border-top-right-radius: 60%;
+    color: var(--norm-gold);
+    border-radius: 20px;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 10%;
+    padding-right: 10%;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    /*Neomorphism Addition Gold*/
+    /*background: linear-gradient(225deg, #aa8b19, #caa51e);
+    box-shadow:  -30px 30px 59px #816913, 
+             30px -30px 59px #f9cb25;*/
+
+    background: #1a3f12;
+    box-shadow: -16px 16px 68px #0a1907, 
+    16px -16px 68px #2a651d;
 }
+
+.contact-button:hover {
+    background-color: var(--norm-gold);
+    color: var(--forest-green);
+    border-radius: 20px;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 10%;
+    padding-right: 10%;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    /*Neomorphism Addition Gold*/
+    /*background: linear-gradient(225deg, #aa8b19, #caa51e);
+    box-shadow:  -30px 30px 59px #816913, 
+             30px -30px 59px #f9cb25;*/
+
+    background: linear-gradient(225deg, #aa8b19, #caa51e);
+    box-shadow: -16px 16px 68px #0a1907, 
+    16px -16px 68px #2a651d;
+}
+
 
 #landing-page{
     background-color: var(--forest-green);
@@ -162,13 +197,13 @@ h1.landingText1 {
     color: var(--norm-gold);
     font-size: 3em;
     margin-bottom: 0%;
-    background-color: red;
 }
 
 h3.landingText {
     color: var(--light-tan);
     font-size: 2em;
-    background-color: green;
+    margin-top: 0%;
+    margin-bottom: 15%;
 }
 
 
@@ -184,38 +219,104 @@ h3.landingText {
 
 
 #about {
-    display: grid;
-    grid-template-columns: 1fr 1fr; /*for the text and the skills*/
-    grid-auto-rows: minmax(100%, auto);
-    background-color: yellow;
+    /*display: grid;
+    grid-template-columns: 1fr 1fr; /*for the text and the skills
+    grid-auto-rows: minmax(100%, auto);*/
+    /*background-color: yellow;*/
     height: 100vh; /*makes the section fill the screen*/
-    opacity: 0.5;
+    
 }
 
-#about-text {
+.about-section {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-auto-rows: minmax(100%, auto);
-    background-color: fuchsia;
+    background-color: var(--light-tan);
 }
 
-#about-info {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-auto-rows: minmax(100%, auto);
-    background-color: goldenrod;
-}
-
-#education {
-    display: grid;
+.about-text > h2 {
+    display: inline-block;
+    
+    
+    
+    text-justify: left;
+    margin-top: 15%;
+    
+    margin-right: 10%;
+    margin-bottom: 0%;
+    height: 10%;
     width: 100%;
-    background-color: palevioletred;
+    grid-column-start: 0;
+    grid-column-end: 100%;
+    grid-row-start: 0;
+    grid-row-end: 25%;
 }
 
-#skills {
-    display: grid;
+.about-text > p {
+    color: var(--rich-black);
+    font-size: 120%;
+    text-justify: left;
+    padding-right: 10%;
+    
+}
+
+.about-text {
+    display: inline-block;
+    color: var(--rich-black);
+    
+    
+    /*text-justify: left;
+    margin: auto;
     width: 100%;
-    background-color: salmon;
+    grid-column-start: 0;
+    grid-column-end: 100%;
+    grid-row-start: 0;
+    grid-row-end: 25%;*/
+    margin-left: 10%;
+}
+
+.about-info {
+    display: inline-block;
+}
+
+.education {
+    display: inline-block;
+    
+    height: 25%;
+    width: 75%;
+    margin-top: 22%;
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
+.skills {
+    display: inline-block;
+    
+    
+    height: 15%;
+    width: 75%;
+    margin-top: 5%;
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
+ul.skill-icons {
+    list-style-type: none;
+    padding-top: 2%;
+    margin-left: 0%;
+    margin-right: 10%;
+    width: 100%;
+}
+
+
+ul.skill-icons li {
+    display: inline;
+}
+
+#indiv-icon {
+    height: 50px;
+    width: 50px;
+    margin-left: 0%;
 }
 
 #contact {
