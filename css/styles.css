@@ -234,9 +234,10 @@ h3.landingText {
     background-color: var(--light-tan);
 }
 
-.about-text > h2 {
+.about-text > h1 {
     display: inline-block;
-    
+    color: var(--forest-green);
+    font-size: 3em;
     
     
     text-justify: left;
@@ -251,6 +252,7 @@ h3.landingText {
     grid-row-start: 0;
     grid-row-end: 25%;
 }
+
 
 .about-text > p {
     color: var(--rich-black);
@@ -282,30 +284,42 @@ h3.landingText {
 .education {
     display: inline-block;
     
-    height: 25%;
+    height: 20%;
     width: 75%;
-    margin-top: 22%;
+    margin-top: 25%;
     margin-right: 10%;
     margin-left: 10%;
+    border: 0.5em solid var(--forest-green); 
+    border-bottom-style: hidden;
+    border-right-style: hidden;  
+    padding-left: 4%; 
 }
+
+
 
 .skills {
     display: inline-block;
     
     
-    height: 15%;
+    height: 30%;
     width: 75%;
     margin-top: 5%;
     margin-right: 10%;
     margin-left: 10%;
+    border: 0.5em solid var(--forest-green); 
+    border-bottom-style: hidden;
+    border-right-style: hidden;  
+    padding-left: 4%;
+     
 }
 
 ul.skill-icons {
     list-style-type: none;
     padding-top: 2%;
-    margin-left: 0%;
+    margin-left: 0;
     margin-right: 10%;
     width: 100%;
+    
 }
 
 
@@ -317,6 +331,8 @@ ul.skill-icons li {
     height: 50px;
     width: 50px;
     margin-left: 0%;
+    background-color: red;
+    
 }
 
 #contact {
