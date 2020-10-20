@@ -55,7 +55,24 @@
     grid-auto-rows: minmax(100%, auto);
     background-color: var(--forest-green);
     width: 100%;
-    height: 86vh; /*compensates for the header, keeping full page*/
+    height: 100vh; /*compensates for the header, keeping full page*/
+    z-index: -1;
+}
+
+#home:after {
+    background: inherit;
+    display: inline-block;
+    height: 30%;
+    width: 100%;
+    background-color:var(--light-tan);
+    z-index: 1;
+    left: 0;
+    right: 0;
+    content: '';
+    transform-origin: 100%;
+    transform: skewY(-4deg);
+    position: absolute;
+    bottom: -90px;
 }
 
 #home > div > img {
@@ -232,6 +249,7 @@ h3.landingText {
     grid-template-columns: 1fr 1fr;
     grid-auto-rows: minmax(100%, auto);
     background-color: var(--light-tan);
+    
 }
 
 .about-text > h1 {
@@ -305,7 +323,7 @@ h3.landingText {
     width: 75%;
     margin-top: 5%;
     margin-right: 10%;
-    margin-left: 10%;
+    margin-left: 10%; 
     border: 0.5em solid var(--forest-green); 
     border-bottom-style: hidden;
     border-right-style: hidden;  
@@ -313,10 +331,18 @@ h3.landingText {
      
 }
 
+/*Aligns the icons to the left within skills */
+.skill-icons {
+    margin-left: 10%;
+    padding-left: 0%;
+    padding-right: 0%;
+    
+}
+
 ul.skill-icons {
     list-style-type: none;
     padding-top: 2%;
-    margin-left: 0;
+    margin-left: 0%;
     margin-right: 10%;
     width: 100%;
     
@@ -330,19 +356,10 @@ ul.skill-icons li {
 #indiv-icon {
     height: 50px;
     width: 50px;
-    margin-left: 0%;
-    background-color: red;
     
 }
 
-#contact {
-    display: grid;
-    grid-template-columns: 100%; 
-    grid-auto-rows: minmax(100%, auto);
-    background-color: slateblue;
-    height: 100vh;
-    
-}
+
 
 #services {
     display: grid;
@@ -352,11 +369,142 @@ ul.skill-icons li {
 }
 
 #web-development {
-    background-color: hotpink;
+    background-color: var(--norm-gold);
+    color: var(--light-tan);
+}
+
+.web-dev-text {
+    color: var(--forest-green);
+    width: 75%;
+    text-align: left;
+    margin-left: 10%;
+    margin-top: 20%;
+    float: top;
+
+    
 }
 
 #uiux-design {
-    background-color: yellowgreen;
+    background-color: var(--light-tan);
+    color: var(--forest-green);
+}
+
+.uiux-text {
+    
+    width: 75%;
+    text-align: right;
+    margin-left: 15%;
+    margin-top: 55%;
+    margin-bottom: 10%;
+    
+}
+
+.web-dev-button-div {
+    margin-top: 45%;
+}
+
+.web-dev-button {
+    /*background-color: var(--norm-gold);*/
+    color: var(--forest-green);
+    border-radius: 20px;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-left: 10%;
+    
+    text-decoration: none;
+    text-transform: uppercase;
+
+    /*Neomorphism Addition Gold*/
+    background: linear-gradient(225deg, #aa8b19, #caa51e);
+    box-shadow:  -30px 30px 59px #816913, 
+             30px -30px 59px #f9cb25;
+
+    background: var(--light-tan);
+    /*box-shadow: -16px 16px 68px #0a1907, 
+    16px -16px 68px #2a651d;*/
+}
+
+.web-dev-button:hover {
+    background-color: var(--norm-gold);
+    color: var(--forest-green);
+    border-radius: 20px;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 10%;
+    padding-right: 10%;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    /*Neomorphism Addition Gold*/
+    /*background: linear-gradient(225deg, #aa8b19, #caa51e);
+    box-shadow:  -30px 30px 59px #816913, 
+             30px -30px 59px #f9cb25;*/
+
+    background: linear-gradient(225deg, #aa8b19, #caa51e);
+    box-shadow: -16px 16px 68px #0a1907, 
+    16px -16px 68px #2a651d;
+}
+
+.uiux-button-div {
+    
+    
+}
+
+.uiux-button {
+    /*background-color: var(--light-tan);*/
+    color: var(--forest-green);
+    border-radius: 20px;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-left: 64%;
+    
+    text-decoration: none;
+    text-transform: uppercase;
+
+    /*Neomorphism Addition Gold*/
+    /*background: linear-gradient(225deg, #aa8b19, #caa51e);
+    box-shadow:  -30px 30px 59px #816913, 
+             30px -30px 59px #f9cb25;*/
+    background: var(--norm-gold);
+    box-shadow:  -20px 20px 60px #585545, 
+             20px -20px 60px #ffffff;
+}
+
+.uiux-button:hover {
+    background-color: var(--norm-gold);
+    color: var(--forest-green);
+    border-radius: 20px;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 10%;
+    padding-right: 10%;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    /*Neomorphism Addition Gold*/
+    /*background: linear-gradient(225deg, #aa8b19, #caa51e);
+    box-shadow:  -30px 30px 59px #816913, 
+             30px -30px 59px #f9cb25;*/
+
+    background: linear-gradient(225deg, #aa8b19, #caa51e);
+    box-shadow: -16px 16px 68px #0a1907, 
+    16px -16px 68px #2a651d;
+}
+
+
+
+
+#contact {
+    display: grid;
+    grid-template-columns: 100%; 
+    grid-auto-rows: minmax(100%, auto);
+    background-color: slateblue;
+    height: 100vh;
+    
 }
 
 footer{
