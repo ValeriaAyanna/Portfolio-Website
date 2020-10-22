@@ -503,9 +503,31 @@ ul.skill-icons li {
     grid-template-columns: 2fr 4fr; 
     grid-auto-rows: minmax(100%, auto);
     background-color: var(--light-tan);
+    width: 100%;
     height: 100vh;
+    z-index: -2;
     
 }
+
+#contact:after {
+    
+    display: inline-block;
+    height: 20%;
+    width: 100%;
+    /*linear-gradient(-4deg, #0a1907, var(--forest-green);*/
+    background-color: var(--forest-green);
+    z-index: 2;
+    left: 0;
+    right: 0;
+    content: '';
+    transform-origin: 100%;
+    transform: skewY(-4deg);
+    position: absolute;
+    margin-top: 38%;
+    
+    
+}
+
 
 .contact-text {
     background: var(--light-tan);
@@ -536,17 +558,19 @@ h3.ContactText {
     display: grid;
     grid-template-columns: 2fr 1fr; 
     grid-auto-rows: minmax(100%, auto);
-    height: 50%;
+    height: 60%;
     width: 100%;
     margin-top: 15%;
     box-shadow:  -20px 20px 60px #585545, 
              20px -20px 60px #ffffff;
+    z-index: 3;
+    
 }
 
 .contact-form {
     background: var(--norm-gold);
     float: left;
-    z-index: 2;
+    
     padding-right: 10%;
 }
 
@@ -556,20 +580,82 @@ h3.ContactText {
     margin-top: 5%;
     margin-bottom: 5%;
     padding-left: 5%;
+    
 }
 
 
 
 #field {
     text-align: left;
-    width: 75%;
 }
 
+::placeholder {
+    color: var(--forest-green);
+    opacity: 0.7;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text] {
+    width: 100%; /* Full width */
+    padding-top: 2%; /* Some padding */ 
+    padding-bottom: 2%;
+    border: 1px solid var(--forest-green); /* Gray border */
+    border-radius: 10px; /* Rounded borders */
+    box-sizing: border-box;  /*Make sure that padding and width stays in place */
+    margin-bottom: 1%; /* Bottom margin */
+    background-color: var(--light-tan);
+    
+  }
+
+  textarea {
+    width: 100%; /* Full width */
+    padding-top: 2%; /* Some padding */ 
+    padding-bottom: 5%;
+    border: 1px solid var(--forest-green); /* Gray border */
+    border-radius: 10px; /* Rounded borders */
+    box-sizing: border-box;  /*Make sure that padding and width stays in place */
+    margin-bottom: 1%; /* Bottom margin */
+    resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+    z-index: 1;
+    background-color: var(--light-tan);
+    
+  }
+
 .contact-info {
-    background: linear-gradient(90deg, #aa8b19, #caa51e);;
-    z-index: 2;
+    background: linear-gradient(90deg, #aa8b19, #caa51e);
+    
     padding-left: 5%;
 }
+
+.form-button {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 10%;
+    padding-right: 10%;
+    z-index: 4;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--light-tan);
+    border-radius: 20px;
+    background: var(--forest-green);
+    box-shadow:  -30px 30px 59px #816913, 
+             30px -30px 59px #f9cb25;
+}
+
+
+/*
+
+
+
+/*Neomorphism Addition Gold*/
+/*background: linear-gradient(225deg, #aa8b19, #caa51e);
+box-shadow:  -30px 30px 59px #816913, 
+         30px -30px 59px #f9cb25;
+background: var(--norm-gold);
+box-shadow:  -20px 20px 60px #585545, 
+         20px -20px 60px #ffffff;*/
+
+
 
 footer{
     display: grid;
@@ -577,4 +663,30 @@ footer{
     grid-auto-rows: minmax(100%, auto);
     background-color: var(--forest-green);
     float: bottom;
+    height: 50vh;
+    text-align: center;
+}
+
+ul.footer-navbar {
+    list-style-type: none;
+    margin: 0;
+    padding-top: 10%;
+}
+
+.footer-navbutton {
+    margin: 3rem 5rem 3rem 2rem;
+}
+
+ul.footer-navbar li {
+    display: inline;
+}
+
+ul.footer-navbar li > a:link {
+    text-decoration: none;
+    color: var(--light-tan);
+}
+
+.credits {
+    color: var(--light-tan);
+    margin-top: 5%;
 }
