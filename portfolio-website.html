@@ -120,16 +120,51 @@
 
         <!--Contact-->
         <section id="contact">
-            <h2>Let's connect!</h2>
-            <h4>I'd love to hear from you</h4>
-            <section>
-                <section><!--form-->
+            <div class="contact-text">
+                <h1 class="ContactText1">Let's connect!<br><h3 class="ContactText">I'd love to hear from you</h3></h1>
+            </div>
+            
+            <div class="contact-side">
+                <div class="contact-form">
+                    <form action="action_page.php">
+                        <div class="form-lines">
+                            <label for="fname">First Name:</label>
+                            <input type="text" id="fname field" name="firstname" placeholder="First Name...">
+                        </div>
+                        
+                        <div class="form-lines">
+                            <label for="lname">Last Name:</label>
+                            <input type="text" id="lname field" name="lastname" placeholder="Last Name...">
+                        </div>
 
-                </section>
-                <section><!-- information-->
+                        <div class="form-lines">
+                            <label for="email">Email:</label>
+                            <input type="text" id="email field" name="email" placeholder="name@example.com">
+                        </div>
+                       
+                        <div class="form-lines"> 
+                            <label for="message">Message:</label>
+                            <textarea id="message field" name="message" placeholder="Your message..."></textarea>
+                        </div>
+                        
+                        <input type="submit" value="Submit">
 
-                </section>
-            </section>
+                    </form>
+                    
+                </div>
+                <div class="contact-info">
+                    <!-- information-->
+                    <div class="info-email">
+                        <h4>Email:</h4>
+                        <p>valeria_felder@outlook.com</p>
+                    </div>
+                    <div class="info-phone">
+                        <h4>Phone:</h4>
+                        <p>(936) 204-5239</p>
+                    </div>
+                </div>
+            </div>
+            
         </section>
         
 
