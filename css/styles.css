@@ -441,29 +441,29 @@ ul.skill-icons li {
              30px -30px 59px #f9cb25;
 
     background: var(--light-tan);
-    /*box-shadow: -16px 16px 68px #0a1907, 
-    16px -16px 68px #2a651d;*/
+    
 }
 
 .web-dev-button:hover {
-    background-color: var(--norm-gold);
+    /*background-color: var(--norm-gold);*/
     color: var(--forest-green);
     border-radius: 20px;
-    padding-top: 5%;
-    padding-bottom: 5%;
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-left: 10%;
+    
     text-decoration: none;
     text-transform: uppercase;
 
     /*Neomorphism Addition Gold*/
-    /*background: linear-gradient(225deg, #aa8b19, #caa51e);
-    box-shadow:  -30px 30px 59px #816913, 
-             30px -30px 59px #f9cb25;*/
-
     background: linear-gradient(225deg, #aa8b19, #caa51e);
-    box-shadow: -16px 16px 68px #0a1907, 
-    16px -16px 68px #2a651d;
+    box-shadow:  -30px 30px 59px #816913, 
+             30px -30px 59px #f9cb25;
+
+    background: var(--light-tan);
+    border: 2px solid #816913;
 }
 
 
@@ -481,34 +481,27 @@ ul.skill-icons li {
     text-decoration: none;
     text-transform: uppercase;
 
-    /*Neomorphism Addition Gold*/
-    /*background: linear-gradient(225deg, #aa8b19, #caa51e);
-    box-shadow:  -30px 30px 59px #816913, 
-             30px -30px 59px #f9cb25;*/
     background: var(--norm-gold);
     box-shadow:  -20px 20px 60px #585545, 
              20px -20px 60px #ffffff;
 }
 
 .uiux-button:hover {
-    background-color: var(--norm-gold);
     color: var(--forest-green);
     border-radius: 20px;
-    padding-top: 5%;
-    padding-bottom: 5%;
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-left: 64%;
+    
     text-decoration: none;
     text-transform: uppercase;
 
-    /*Neomorphism Addition Gold*/
-    /*background: linear-gradient(225deg, #aa8b19, #caa51e);
-    box-shadow:  -30px 30px 59px #816913, 
-             30px -30px 59px #f9cb25;*/
-
-    background: linear-gradient(225deg, #aa8b19, #caa51e);
-    box-shadow: -16px 16px 68px #0a1907, 
-    16px -16px 68px #2a651d;
+    background: var(--norm-gold);
+    box-shadow:  -20px 20px 60px #585545, 
+             20px -20px 60px #ffffff;
+    border: 2px solid #585545;
 }
 
 
@@ -620,7 +613,7 @@ input[type=text] {
     box-sizing: border-box;  /*Make sure that padding and width stays in place */
     margin-bottom: 1%; /* Bottom margin */
     background-color: var(--light-tan);
-    box-shadow:  10px 10px 30px var(--rich-black);
+    box-shadow:  10px 10px 35px #816913;
             /* -20px -20px 49px red;*/
     
   }
@@ -642,7 +635,7 @@ input[type=text] {
     z-index: 1;
     background-color: var(--light-tan);
     max-height: 8em; 
-    box-shadow:  10px 10px 30px var(--rich-black);
+    box-shadow:  10px 10px 35px #816913;
   }
 
   textarea:active, textarea:focus {
@@ -674,6 +667,23 @@ input[type=text] {
     background: var(--forest-green);
     box-shadow:  -30px 30px 49px #816913, 
              30px -30px 49px #f9cb25;
+}
+
+.form-button:hover {
+   
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 15%;
+    padding-right: 15%;
+    z-index: 4;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--light-tan);
+    border-radius: 20px;
+    background: var(--forest-green);
+    box-shadow:  -30px 30px 49px #816913, 
+             30px -30px 49px #f9cb25;
+    border: 2px solid var(--light-tan);
 }
 
 
