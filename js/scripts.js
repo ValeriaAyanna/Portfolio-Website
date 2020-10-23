@@ -1,37 +1,9 @@
-/* STICKY HEADER SECTION */
-
-var h = document.getElementById("header-section");
-
-var readout = document.getElementById("body");
-var stuck = false;
-
-function getDistance() {
-    
-    var topDist = h.offsetTop;
-    window.alert("reading JS file");
-    return topDist;
-}
-var stickPoint = getDistance();
+/*Screen size reference*/
+window.alert("hi");
+window.screen.height;
+window.screen.width;
 
 
-
-
-
-
-window.onscroll = function(e) {
-    var distance = getDistance() - window.pageYOffset;
-    var offset = window.pageYOffset;
-    readout.innerHTML = stickPoint + '   ' + distance + '   ' + offset + '   ' + stuck;
-    if((distance <= 0) && !stuck) {
-        h.style.position = 'fixed';
-        h.style.top = '0px';
-        stuck = true;
-    }
-    else if(stuck && (ofset <= stickPoint)) {
-        h.style.position = 'static';
-        stuck = false;
-    }
-}
 
 /*
 Scroll Jump Section
