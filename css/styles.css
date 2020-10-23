@@ -466,10 +466,7 @@ ul.skill-icons li {
     16px -16px 68px #2a651d;
 }
 
-.uiux-button-div {
-    
-    
-}
+
 
 .uiux-button {
     /*background-color: var(--light-tan);*/
@@ -613,16 +610,24 @@ h3.ContactText {
     opacity: 0.7;
 }
 
-/* Style inputs with type="text", select elements and textareas */
+/* Style inputs with type="text" */
 input[type=text] {
     width: 100%; /* Full width */
     padding-top: 2%; /* Some padding */ 
     padding-bottom: 2%;
     border-radius: 10px; /* Rounded borders */
+    border: 2px solid var(--light-tan);
     box-sizing: border-box;  /*Make sure that padding and width stays in place */
     margin-bottom: 1%; /* Bottom margin */
     background-color: var(--light-tan);
+    box-shadow:  10px 10px 30px var(--rich-black);
+            /* -20px -20px 49px red;*/
     
+  }
+
+  input[type=text]:active, input[type=text]:focus {
+    border: 2px solid var(--forest-green);
+    outline: none;
   }
 
   textarea {
@@ -630,12 +635,19 @@ input[type=text] {
     padding-top: 2%; /* Some padding */ 
     padding-bottom: 5%;
     border-radius: 10px;
+    border: 2px solid var(--light-tan);
     box-sizing: border-box;  /*Make sure that padding and width stays in place */
     margin-bottom: 1%; /* Bottom margin */
     resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
     z-index: 1;
     background-color: var(--light-tan);
-    
+    max-height: 8em; 
+    box-shadow:  10px 10px 30px var(--rich-black);
+  }
+
+  textarea:active, textarea:focus {
+    border: 2px solid var(--forest-green);
+    outline: none;
   }
 
 .contact-info {
@@ -644,19 +656,24 @@ input[type=text] {
     padding-left: 5%;
 }
 
+.form-button-div {
+    margin-top: 30%;
+}
+
 .form-button {
+   
     padding-top: 5%;
     padding-bottom: 5%;
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-left: 15%;
+    padding-right: 15%;
     z-index: 4;
     text-decoration: none;
     text-transform: uppercase;
     color: var(--light-tan);
     border-radius: 20px;
     background: var(--forest-green);
-    box-shadow:  -30px 30px 59px #816913, 
-             30px -30px 59px #f9cb25;
+    box-shadow:  -30px 30px 49px #816913, 
+             30px -30px 49px #f9cb25;
 }
 
 

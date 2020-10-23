@@ -1,7 +1,4 @@
-/*Screen size reference*/
-window.alert("hi");
-window.screen.height;
-window.screen.width;
+
 
 
 
